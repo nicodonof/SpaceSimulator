@@ -9,7 +9,7 @@ import org.newdawn.slick.Graphics;
 public class InfoBox implements Serializable{
 	
 	private static final int ESPACIO_ENTRE_RENGLON = 25;
-	ArrayList<String> lineas = new ArrayList<String>();
+	ArrayList<String> lineas = new ArrayList<>();
 	private float centroX;
 	private float centroY;
 	private String titulo;
