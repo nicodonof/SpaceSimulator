@@ -24,6 +24,8 @@ public class Universo implements Screen,Serializable{
 
 	private static final int MAXIMO_PLANETAS_POR_CUADRANTE = 2;
 
+	private static final double AJUSTAR_DELTA = 0.075;
+
 	protected double contadorGeneral = 0;
 
 	protected ArrayCuerpoCeleste cuerpos = new ArrayCuerpoCeleste();
@@ -251,6 +253,6 @@ public class Universo implements Screen,Serializable{
 		}
 	}
 	public void administrarTiempo(int delta){
-		contadorGeneral +=  0.1 * delta;
+		contadorGeneral +=  AJUSTAR_DELTA * delta;
 	}
 }

@@ -9,7 +9,9 @@ import coordenaico.spacer.Punto;
 
 public abstract class CuerpoCeleste implements Serializable{
 	
-	 protected long tiempoDeCreacion;
+	 private static final double AJUSTAR_DELTA = 0.0008;
+
+	protected long tiempoDeCreacion;
 	 
 	 protected double masa ;
 	 
@@ -44,7 +46,7 @@ public abstract class CuerpoCeleste implements Serializable{
 	 }
 	 
 	 public void posicionar(ArrayCuerpoCeleste cuerpos, int delta){
-		double tiempoCasteado = 0.001 * delta;
+		double tiempoCasteado = AJUSTAR_DELTA * delta;
 		Punto fuerzaTotal = new Punto(0,0);
 		fuerzaTotal = fuerzaTotal.suma(this.gravedad(cuerpos));
 		aceleracion = fuerzaTotal.divisionConstanteVector(masa);
