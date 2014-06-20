@@ -31,7 +31,7 @@ public class Satelite extends CuerpoCeleste implements Serializable{
 		
 		this.posicion = posicionarPrimeraVez();
 		
-		timeOfCreation = new Date().getTime();
+		tiempoDeCreacion = new Date().getTime();
 		
 		double signo = ( Math.random() - 0.5 );// para que gire para ambos lados
 		if(signo > 0){
@@ -74,7 +74,7 @@ public class Satelite extends CuerpoCeleste implements Serializable{
 	}
 	@Override
 	public void	posicionar(ArrayCuerpoCeleste cuerpos, int delta){ // se mantienen los parametros para lograr el polimorfismo
-			double tiempoCasteado = new Date().getTime() - timeOfCreation;
+			double tiempoCasteado = new Date().getTime() - tiempoDeCreacion;
 			
 			tiempoCasteado = tiempoCasteado / 325;
 			

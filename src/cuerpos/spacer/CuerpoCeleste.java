@@ -9,7 +9,7 @@ import coordenaico.spacer.Punto;
 
 public abstract class CuerpoCeleste implements Serializable{
 	
-	 protected long timeOfCreation;
+	 protected long tiempoDeCreacion;
 	 
 	 protected double masa ;
 	 
@@ -69,8 +69,8 @@ public abstract class CuerpoCeleste implements Serializable{
 		this.velocidadVector = velocidadVector;
 	}
 	
-	public long getTimeOfCreation() {
-	  return timeOfCreation;
+	public long getTiempoDeCreacion() {
+	  return tiempoDeCreacion;
 	}
 	
 	public String getNombre() {

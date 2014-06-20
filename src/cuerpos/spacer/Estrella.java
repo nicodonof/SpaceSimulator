@@ -24,7 +24,7 @@ public class Estrella extends CuerpoCeleste implements Screen , Serializable{
 		
 		this.tiempoDeVida = (10000 + Math.random() * 17000); // balancea el universo
 		
-		this.timeOfCreation = 0;
+		this.tiempoDeCreacion = 0;
 		//La posicion se randomiza segun el cuadrante al cual le entra el constructor
 		this.posicion = new Punto((Math.random() - 0.5) * ancho + cuadrant.getCentroX(),(Math.random() - 0.5) * alto + cuadrant.getCentroY());
 		

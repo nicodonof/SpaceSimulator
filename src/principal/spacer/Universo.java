@@ -86,16 +86,16 @@ public class Universo implements Screen,Serializable{
 		nombresE.add("Cheleb");
 		nombresE.add("Sun");
 		nombresE.add("Caph");
-		nombresP.add("Kaus Australis");
-		nombresP.add("Bellatrix");
-		nombresP.add("Kaus Boreallis");
-		nombresP.add("Minkar");
-		nombresP.add("Lyra");
-		nombresP.add("Yed prior");
-		nombresP.add("Corvus");
-		nombresP.add("Gemma");
-		nombresP.add("Capella");
-		nombresP.add("Andromeda");
+		nombresE.add("Kaus Australis");
+		nombresE.add("Bellatrix");
+		nombresE.add("Kaus Boreallis");
+		nombresE.add("Minkar");
+		nombresE.add("Lyra");
+		nombresE.add("Yed prior");
+		nombresE.add("Corvus");
+		nombresE.add("Gemma");
+		nombresE.add("Capella");
+		nombresE.add("Andromeda");
 		
 		//ASTEROIDES
 		nombresA.add("Haley");

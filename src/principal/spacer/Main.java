@@ -93,8 +93,9 @@ public class Main extends BasicGame implements Screen {
 	public void update(GameContainer arg0, int arg1) throws SlickException {
 		Input input = arg0.getInput();
 		arg0.setSmoothDeltas(true);
+		arg0.setTargetFrameRate(60);
 		delta = arg1;
-		System.out.println(arg1);
+	
 		if (input.isKeyDown(Input.KEY_UP)) {
 			cameraY += -(delta + 3) / 3;
 		}

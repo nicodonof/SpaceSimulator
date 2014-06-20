@@ -24,7 +24,7 @@ public class Asteroide extends CuerpoCeleste implements Serializable{
 		
 		this.velocidadVector = new Punto(150,-150); // Estos valores son para simular 
 														// fluidez
-		timeOfCreation = new Date().getTime();
+		tiempoDeCreacion = new Date().getTime();
 	}
 	
 }

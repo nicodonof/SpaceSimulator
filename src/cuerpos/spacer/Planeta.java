@@ -43,7 +43,7 @@ public class Planeta extends CuerpoCeleste implements Screen ,Serializable{
 	  
 	  this.velocidadVector = (velocidadInicial(Estrellas));
 	  
-	  timeOfCreation = new Date().getTime();
+	  tiempoDeCreacion = new Date().getTime();
 	}
 	 
 	 public Planeta(float x,float y, int radio, Punto velocidadInit, String nombre){
@@ -59,7 +59,7 @@ public class Planeta extends CuerpoCeleste implements Screen ,Serializable{
 		  
 		  this.velocidadVector = velocidadInit;
 		  
-		  timeOfCreation = new Date().getTime();
+		  tiempoDeCreacion = new Date().getTime();
 	 }
 	 
 	
